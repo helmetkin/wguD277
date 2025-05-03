@@ -1,0 +1,152 @@
+/* 1. Font family declaration */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Element selector */
+  h1, h2, h3 {
+    color: #2a4d69;
+    text-align: center;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    background-color: #2a4d69;
+    padding: 1rem;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* 2. Hover pseudo-class for nav links */
+  nav ul li a:hover {
+    background-color: #4b86b4;
+    border-radius: 5px;
+  }
+  
+  /* Main layout */
+  main {
+    padding: 2rem;
+  }
+  
+  /* Float  */
+  img.float-right {
+    float: right;
+    max-width: 45%; /* Restricts the size of floated images */
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+   img{
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center images */
+   }
+  
+  /* 4. Absolute */
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2a4d69;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  html, body {
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    padding-bottom: 80px; /* Enough space for footer height */
+  }
+  
+  /* 5. Relative positioning */
+  section {
+    position: relative;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Submit button */
+  button {
+    padding: 0.7rem;
+    background-color: #2a4d69;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Class selector used twice on the same page */
+  .card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* ID selector */
+  #contactForm {
+    background-color: #e9f1f7;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  /* Clearfix utility to contain floated elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 768px) {
+    /* Adjusting navigation for mobile */
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    img.float-right {
+        float: none; /* Remove float on mobile */
+        display: block;
+        width: 80%; /* Make the image wider */
+        margin: 0 auto; /* Center the image */
+      }
+  }
+  
